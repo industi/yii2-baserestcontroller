@@ -1,6 +1,6 @@
 {
     "name": "industi/yii2/baserestcontroller",
-    "description": "Manage your relation easy",
+    "description": "Base implementation of rest controller ",
     "type": "yii2-extension",
     "require": {
         "php": ">=5.4.0",
