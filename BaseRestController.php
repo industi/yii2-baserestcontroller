@@ -14,8 +14,7 @@ use yii\web\NotFoundHttpException;
 abstract class BaseRestController extends \yii\rest\ActiveController {
 
     /**
-     * set own serializer
-     * @var array 
+     * @inheritdoc
      */
     public $serializer = [
         'class' => 'yii\rest\Serializer',
@@ -23,7 +22,7 @@ abstract class BaseRestController extends \yii\rest\ActiveController {
     ];
 
     /**
-     *
+     * Callback which can customime query in [[findModel]]
      * @var callback 
      */
     public $findModelQuery;
