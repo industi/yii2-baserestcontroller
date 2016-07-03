@@ -32,29 +32,8 @@ abstract class BaseRestController extends \yii\rest\ActiveController {
      * @return array
      */
     public function behaviors() {
-        $behaviors = array_merge(parent::behaviors(), [
-            'verbFilter' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'index' => [
-                        'GET', 'HEAD'
-                    ],
-                    'view' => [
-                        'GET', 'HEAD'
-                    ],
-                    'create' => [
-                        'POST'
-                    ],
-                    'update' => [
-                        'PUT', 'PATCH'
-                    ],
-                    'delete' => [
-                        'DELETE'
-                    ]
-                ]
-            ],
-        ]);
-        if (Yii::$app->getRequest()->getMethod() != 'OPTIONS') {
+        $behaviors = parent::behaviors();
+        if (Yii::$app->getRequest()->getMethod() != 'OPTIONS') {\
             $behaviors['authenticator'] = [
                 'class' => HttpBasicAuth::className(),
             ];
