@@ -1,5 +1,5 @@
 {
-    "name": "industi/yii2/baserestcontroller",
+    "name": "industi/yii2-baserestcontroller",
     "description": "Base implementation of rest controller ",
     "type": "yii2-extension",
     "require": {
@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "industi\\yii2\\": ""
+            "industi\\yii2\\restcontroller": ""
         }
     }
 }
