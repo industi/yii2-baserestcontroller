@@ -1,6 +1,6 @@
 <?php
 
-namespace system\v1\components\base;
+namespace industi\\yii2\\restcontroller;
 
 use Yii;
 use yii\filters\auth\HttpBasicAuth;
