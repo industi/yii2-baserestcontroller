@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "industi\\yii2\\restcontroller": ""
+            "industi\\yii2\\restcontroller\\": ""
         }
     }
 }
