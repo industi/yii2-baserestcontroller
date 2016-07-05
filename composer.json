@@ -13,7 +13,7 @@
             "email": "sergiusz.lebedyn@industi.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "industi\\yii2\\restcontroller\\": ""
